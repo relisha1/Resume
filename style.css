@@ -83,11 +83,6 @@ section {
     font-size: 20px;
 }
 
-/* Removed the Start Button */
-/* .cta-button {
-    display: none;
-} */
-
 /* Profile Section */
 #profile h2 {
     font-size: 28px;
@@ -142,15 +137,13 @@ section {
     word-wrap: break-word;
 }
 
-/* Contact Info */
+/* Contact Info (Removed the Square Box) */
 #contact-info {
-    background-color: #222;
-    padding: 20px;
     text-align: center;
-}
-
-#contact-info p {
+    padding: 20px;
     font-size: 18px;
+    background: none; /* Removed the background box */
+    border: none; /* Ensures no border effect */
 }
 
 #contact-info a {
