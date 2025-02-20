@@ -63,7 +63,6 @@ nav ul li a:hover {
     color: yellow;
 }
 
-/* Sections - Ensuring Alignment */
 section {
     margin-left: 18%;
     padding: 50px;
@@ -137,13 +136,12 @@ section {
     word-wrap: break-word;
 }
 
-/* Contact Info (Removed the Square Box) */
 #contact-info {
     text-align: center;
     padding: 20px;
     font-size: 18px;
-    background: none; /* Removed the background box */
-    border: none; /* Ensures no border effect */
+    background: none; 
+    border: none;
 }
 
 #contact-info a {
