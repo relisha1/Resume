@@ -1,158 +1,192 @@
-/* General Styling */
+/* General Styles */
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0f0f0f;
+    background-image: url('https://www.transparenttextures.com/patterns/black-felt.png'); /* Background Texture */
+    background-color: #000; /* Black background */
     color: white;
 }
 
 /* Sidebar Navigation */
-#sidebar {
+nav {
+    width: 15%;
+    height: 100vh;
+    background-color: #111;
     position: fixed;
     left: 0;
     top: 0;
-    width: 100px;
-    height: 100%;
-    background: black;
-    padding: 20px;
+    padding-top: 20px;
+    text-align: left;
 }
 
-.logo {
+nav .logo {
     color: yellow;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
 }
 
-#sidebar ul {
-    list-style-type: none;
+nav ul {
+    list-style: none;
     padding: 0;
-    margin-top: 30px;
 }
 
-#sidebar ul li {
-    padding: 10px;
+nav ul li {
+    padding: 15px;
 }
 
-#sidebar ul li a {
-    text-decoration: none;
+nav ul li a {
     color: white;
+    text-decoration: none;
     font-size: 18px;
 }
 
-#sidebar ul li a:hover {
+nav ul li a:hover {
     color: yellow;
 }
 
-/* Sections */
-.section {
-    padding: 100px;
+/* Sections - Ensure All Sections are Aligned */
+section {
+    margin-left: 18%;
+    padding: 50px;
     text-align: center;
-}
-
-.container {
-    max-width: 800px;
-    margin: auto;
+    max-width: 800px; /* Ensures a uniform width */
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* Home Section */
-#home h1 {
-    font-size: 50px;
+#hero h1 {
+    font-size: 48px;
+    font-weight: bold;
 }
 
-.highlight {
-    color: yellow;
-}
-
-.title {
+#hero p {
     font-size: 20px;
-    margin-bottom: 20px;
 }
 
 .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background: yellow;
+    background-color: yellow;
     color: black;
-    font-weight: bold;
+    padding: 10px 20px;
     text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: white;
+}
+
+/* Profile Section */
+#profile h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#profile p {
+    max-width: 600px; /* Ensures text does not stretch too wide */
+    margin: 0 auto;
+    line-height: 1.6;
+    word-wrap: break-word;
 }
 
 /* Skills Section */
 #skills h2 {
-    font-size: 30px;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-#skills ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#skills li {
+#skills .skill-list {
+    margin-top: 10px;
     font-size: 20px;
-    margin: 5px 0;
 }
 
 /* Experience Section */
 #experience h2 {
-    font-size: 30px;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-#experience p {
+#experience ul {
+    list-style: none;
+    padding: 0;
+}
+
+#experience ul li {
     font-size: 18px;
     font-weight: bold;
-    margin: 10px 0;
+    margin-bottom: 10px;
 }
 
-/* Contact Info Section */
-#contact-info h2 {
-    font-size: 30px;
+/* Education Section */
+#education h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#education p {
+    max-width: 600px; /* Keeps text within a readable width */
+    margin: 0 auto;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+/* Contact Info */
+#contact-info {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
 }
 
 #contact-info p {
     font-size: 18px;
 }
 
-/* Contact Form */
-#contact h2 {
-    font-size: 30px;
+#contact-info a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: auto;
-}
-
-#contact-form input, #contact-form textarea {
-    padding: 10px;
-    font-size: 16px;
-    width: 100%;
-    border: 1px solid #ccc;
-    background: #1a1a1a;
+#contact-info a:hover {
     color: white;
 }
 
-#contact-form button {
+/* Contact Form */
+#contact {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact input, #contact textarea {
+    width: 80%;
     padding: 10px;
-    background: yellow;
+    margin: 10px;
+    border: 1px solid yellow;
+    background-color: black;
+    color: white;
+}
+
+#contact button {
+    background-color: yellow;
     color: black;
-    font-weight: bold;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
 }
 
-#contact-form button:hover {
-    background: orange;
+#contact button:hover {
+    background-color: white;
 }
 
 /* Footer */
 footer {
-    background-color: #1a1a1e;
-    color: white;
+    background-color: #111;
     text-align: center;
     padding: 10px;
+    font-size: 14px;
 }
