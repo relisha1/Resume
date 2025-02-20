@@ -1,14 +1,9 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elisha Rurangwa - Resume</title>
-    
-    <!-- Corrected CSS Link -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Corrected JavaScript Link -->
+    <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -17,26 +12,25 @@
     <nav id="sidebar">
         <div class="logo">ER</div>
         <ul>
-            <li><a href="#hero">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact-info">Contact Info</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
-    <!-- Hero Section -->
-    <header id="hero">
+    
+    <!-- Home Section -->
+    <section id="home" class="section">
         <div class="container">
-            <h2>Hey there!</h2>
-            <h1>I'm Elisha Rurangwa</h1>
-            <p>Independent <span class="highlight">Software Engineer</span></p>
-            <button class="cta-button" onclick="scrollToSection('contact')">Let's Start</button>
+            <h3>Hey there!</h3>
+            <h1>I'm <span class="highlight">Elisha Rurangwa</span></h1>
+            <p class="title">Student at ALU | Team Leader at CCI Rwanda</p>
         </div>
-    </header>
+    </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="section">
         <div class="container">
             <h2>Skills</h2>
             <ul>
@@ -50,29 +44,26 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience">
+    <section id="experience" class="section">
         <div class="container">
             <h2>Experience</h2>
-            <ul>
-                <li><strong>Team Leader</strong> - CCI Rwanda (Sept 2024 - Present)</li>
-                <li><strong>Call Center Agent</strong> - CCI Rwanda (June 2023 - Sept 2024)</li>
-                <li><strong>Intern in Graphic Design</strong> - Great Vision (Oct 2022 - Jan 2023)</li>
-            </ul>
+            <p><strong>Team Leader</strong> - CCI Rwanda (Sept 2024 - Present)</p>
+            <p><strong>Call Center Agent</strong> - CCI Rwanda (June 2023 - Sept 2024)</p>
+            <p><strong>Intern in Graphic Design</strong> - Great Vision (Oct 2022 - Jan 2023)</p>
         </div>
     </section>
 
     <!-- Contact Info Section -->
-    <section id="contact-info">
+    <section id="contact-info" class="section">
         <div class="container">
             <h2>Contact Info</h2>
             <p>📞 <strong>Phone:</strong> +250 780 710 152</p>
-            <p>✉️ <strong>Email:</strong> <a href="mailto:rurangwaelisha@gmail.com">rurangwaelisha@gmail.com</a></p>
-            <p>🔗 <strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/elisha</a></p>
+            <p>📧 <strong>Email:</strong> <a href="mailto:rurangwaelisha@gmail.com">rurangwaelisha@gmail.com</a></p>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
+    <!-- Contact Form Section -->
+    <section id="contact" class="section">
         <div class="container">
             <h2>Contact Me</h2>
             <form id="contact-form">
