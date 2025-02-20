@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elisha Rurangwa - Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
 
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar">
+        <div class="logo">ER</div>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact-info">Contact Info</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="container">
+            <h2>Hey there!</h2>
+            <h1>I'm Elisha Rurangwa</h1>
+            <p>Independent <span class="highlight">Software Engineer</span></p>
+            <button class="cta-button" onclick="scrollToSection('contact')">Let's Start</button>
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Graphic Design</li>
+                <li>C++, Java, JavaScript</li>
+                <li>Microsoft Office</li>
+                <li>Web Development</li>
+                <li>Communication & Teamwork</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Team Leader</strong> - CCI Rwanda (Sept 2024 - Present)</li>
+                <li><strong>Call Center Agent</strong> - CCI Rwanda (June 2023 - Sept 2024)</li>
+                <li><strong>Intern in Graphic Design</strong> - Great Vision (Oct 2022 - Jan 2023)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section id="contact-info">
+        <div class="container">
+            <h2>Contact Info</h2>
+            <p>📞 <strong>Phone:</strong> +250 780 710 152</p>
+            <p>✉️ <strong>Email:</strong> <a href="mailto:rurangwaelisha@gmail.com">rurangwaelisha@gmail.com</a></p>
+            <p>🔗 <strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/elisha</a></p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Elisha Rurangwa. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
