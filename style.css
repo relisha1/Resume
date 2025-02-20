@@ -1,1 +1,132 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+}
 
+/* Sidebar Navigation */
+#sidebar {
+    width: 80px;
+    height: 100vh;
+    background-color: black;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#sidebar ul li {
+    margin: 20px 0;
+}
+
+#sidebar ul li a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Centered Content */
+.main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 100px; /* To avoid overlap with sidebar */
+}
+
+/* Hero Section */
+#hero {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+#hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: yellow;
+    color: black;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #FFC107;
+}
+
+/* Sections */
+.section {
+    max-width: 600px;
+    padding: 60px 20px;
+}
+
+/* Contact Info */
+#contact-info {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+}
+
+#contact-form button {
+    padding: 12px;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #FFC107;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    width: 100%;
+}
